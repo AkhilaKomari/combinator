@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{background-color:bisque}
+    .parent > .hi{
+        color:blue
+    }
+    .parent .hi{
+        background-color:purple
+    }
+    .parent >h2{
+        color:aqua
+    }
+    .parent h2{
+        background-color:azure
+    }
+    .parent >.h1+h2{
+        font-size: Italic;
+    }
+    .hi+h2{
+        color:violet
+    }
+    .hi~h2{
+        color:brown
+    }
+    .parent>.hlo{
+        color:aquamarine
+    }
+    .parent .hlo{
+        background-color:antiquewhite;
+    }
+    h2+.hlo{
+        color:red
+    }
+    h2~.hlo{
+        background-color:orange
+    }
+    .parent h2{
+        background-color:magenta
+    }
+    .parent>h2{
+        color:goldenrod
+    }
+    .hlo+h2{
+        background-color:blanchedalmond
+    }
+    .hlo~h2{
+        color:pink
+    }
+    .parent h5{
+        color:yellow
+    }
+    .parent>h5{
+        background-color:aqua
+    }
+    h2+h5{
+        color:red
+    }
+    h2~h5{
+        color:palevioletred
+    }
+    .child p{
+        color:aqua
+    }
+    .child>p{
+        background-color:blueviolet
+    }
+    .child h5{
+        background-color:mediumslateblue
+    }
+    .child>h5{
+        color:navy
+    }
+    p+h5{
+        color:bisque
+    }
+    p~h5{
+        background-color:beige
+    }
+    .child h2{
+        background-color:lavenderblush
+    }
+    .child>h2{
+        color:mediumturquoise
+    }
+    h5+h2{
+        color:red
+    }
+    h5~h2{
+        background-color:bisque
+    }
+    .parent>p{
+        color:mediumvioletred
+    }
+    .parent p{
+        background-color:brown
+    }
+    .child+p{
+        color:red
+    }
+    .child~p{
+        background-color:aliceblue
+    }
+    .parent h2{
+        color:maroon
+    }
+    .parent>h2{
+        background-color:darkkhaki
+    }
+    p+h2{
+        background-color:chocolate
+    }
+    p~h2{
+        color:crimson
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <h1 class="hi">Sandwich</h1>
+        <!-- .parent .hi .parent>.hi -->
+        <h2>Pizza</h2>
+        <!-- .parent h2 ,parent > h2 .parent>.hi+h2 .hi+h2 -->
+        <h1 class="hlo">french fries</h1>
+        <h2>Cheese cake</h2>
+        <h5>KFC</h5>
+        <div class="child">
+            <p>Kalakand</p>
+            <h5>Rasmalai</h5>
+            <h2>Gulabjamun</h2>
+        </div>
+        <p>Jelabi</p>
+        <h2>Hoco Icecream</h2>
+    </div>
+</body>
+</html>
